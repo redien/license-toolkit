@@ -1,0 +1,44 @@
+{
+  "name": "license-toolkit",
+  "version": "0.1.0",
+  "description": "A collection of tools for dealing with software licenses.",
+  "main": "generated/main.js",
+  "bin": {
+    "license": "bin/license"
+  },
+  "scripts": {
+    "docs": "markdox parsing/licenseBlock.js -o generated/api-documentation.md",
+    "test": "mocha **/*.unit.js && cucumberjs --fail-fast && npm run-script docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redien/license-toolkit.git"
+  },
+  "keywords": [
+    "license",
+    "software",
+    "open",
+    "source",
+    "oss",
+    "free",
+    "software",
+    "check",
+    "list",
+    "licenses",
+    "foss",
+    "libre"
+  ],
+  "author": "Jesper Oskarsson <jesosk@gmail.com>",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/redien/license-toolkit/issues"
+  },
+  "homepage": "https://github.com/redien/license-toolkit#readme",
+  "devDependencies": {
+    "cucumber": "^0.10.2",
+    "markdox": "^0.1.10",
+    "mocha": "^2.4.5",
+    "promise": "^7.1.1",
+    "should": "^8.3.2"
+  }
+}
